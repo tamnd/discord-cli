@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1234567890123456789",
+    "channel_id": "697138785317814292",
+    "author": {
+      "id": "111222333444555666",
+      "username": "someuser",
+      "discriminator": "0",
+      "global_name": "Some User",
+      "avatar": "userhash1"
+    },
+    "content": "Hello world",
+    "timestamp": "2026-01-01T12:00:00.000000+00:00",
+    "edited_timestamp": null,
+    "tts": false,
+    "mention_everyone": false,
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "reactions": [{"emoji": {"name": "thumbsup"}, "count": 3}],
+    "pinned": false,
+    "type": 0
+  },
+  {
+    "id": "1234567890123456788",
+    "channel_id": "697138785317814292",
+    "author": {
+      "id": "999888777666555444",
+      "username": "anotheruser",
+      "discriminator": "0",
+      "global_name": "Another User",
+      "avatar": null
+    },
+    "content": "How are you?",
+    "timestamp": "2026-01-01T11:55:00.000000+00:00",
+    "edited_timestamp": "2026-01-01T11:56:00.000000+00:00",
+    "tts": false,
+    "mention_everyone": false,
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [{"id": "att1", "filename": "image.png", "size": 1024}],
+    "embeds": [],
+    "reactions": [],
+    "pinned": true,
+    "type": 0
+  }
+]
