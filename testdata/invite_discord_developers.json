@@ -1,0 +1,26 @@
+{
+  "type": 0,
+  "code": "discord-developers",
+  "channel": {
+    "id": "697138785317814292",
+    "type": 0,
+    "name": "rules"
+  },
+  "guild": {
+    "id": "613425648685547541",
+    "name": "Discord Developers",
+    "description": "The place to discuss the Discord API.",
+    "icon": "a_abcdef1234567890",
+    "banner": null,
+    "splash": null,
+    "features": ["COMMUNITY", "DISCOVERABLE", "PARTNERED"],
+    "verification_level": 3,
+    "vanity_url_code": "discord-developers",
+    "nsfw_level": 0,
+    "premium_subscription_count": 42,
+    "premium_tier": 3
+  },
+  "approximate_member_count": 152000,
+  "approximate_presence_count": 8000,
+  "expires_at": null
+}

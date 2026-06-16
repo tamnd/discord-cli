@@ -1,0 +1,18 @@
+[
+  {
+    "id": "613425648685547541",
+    "name": "Discord Developers",
+    "icon": "a_iconhash1",
+    "owner": false,
+    "permissions": "140737488355327",
+    "features": ["COMMUNITY", "DISCOVERABLE"]
+  },
+  {
+    "id": "102860784329052160",
+    "name": "Reactiflux",
+    "icon": "iconhash2",
+    "owner": false,
+    "permissions": "70508266240",
+    "features": ["COMMUNITY"]
+  }
+]

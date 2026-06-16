@@ -1,5 +1,4 @@
-// Package cli assembles the discord command tree from the discord
-// domain on top of the any-cli/kit framework.
+// Package cli assembles the discord command tree.
 package cli
 
 import (
@@ -14,21 +13,21 @@ var (
 	Date    = "unknown"
 )
 
-// NewApp assembles the kit application from the discord domain. The
-// domain's Register installs the client factory and every operation, so the
-// binary and a host (ant, which blank-imports the package) share one source of
-// truth. kit.Run turns the App into the CLI, plus the serve and mcp surfaces and
-// the typed-error-to-exit-code mapping.
-//
-// To add a command, declare it in discord/domain.go with kit.Handle and it
-// appears here automatically. Reach for app.AddCommand only for a verb that does
-// not fit the emit-records shape, the way version does below.
+// NewApp assembles the kit application. Commands are registered as kit
+// escape-hatch commands and wired to the Discord API client.
 func NewApp() *kit.App {
 	id := discord.Domain{}.Info().Identity
 	id.Version = Version
 
 	app := kit.New(id)
 	(discord.Domain{}).Register(app)
+
+	app.AddCommand(newServerCmd())
+	app.AddCommand(newInviteCmd())
+	app.AddCommand(newMeCmd())
+	app.AddCommand(newServersCmd())
+	app.AddCommand(newMessagesCmd())
 	app.AddCommand(newVersionCmd())
+
 	return app
 }
