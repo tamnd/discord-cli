@@ -1,0 +1,10 @@
+title       = "discord"
+baseURL     = "https://discord-cli.tamnd.com/"
+description = "Look up Discord servers and read messages from the terminal"
+contentDir  = "content"
+outputDir   = "public"
+theme       = "tago-doks"
+syntaxHighlight = "true"
+
+[params]
+github = "https://github.com/tamnd/discord-cli"
